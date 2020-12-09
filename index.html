@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/animate.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+
+
+    <title>Steve Portfolio</title>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.ico">
+
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+
+
+<style>
+body{
+    background-color: #252627;
+  }
+
+  .lgo{
+  padding-left: 30px;font-size: 1.3rem;
+}
+
+.navbar{
+    padding: 10px;
+    /* position: fixed; */
+    width: 100%;
+    z-index: 100;
+    
+  }
+
+.navbar-toggler-icon{
+    color: white;
+}
+
+.navbar-nav{
+    padding-top: 40px;
+}
+
+
+  .nav-item{
+    padding-right: 50px;
+    
+
+
+  }
+  .nav-link{
+    font-size: 1.2rem;
+    color: #707070;
+  }
+
+  a{
+    text-decoration: none;
+    font-size: .9rem;
+    text-transform: uppercase;
+    position: relative;
+    top: 50%;
+    bottom: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .main-info-section{
+    height: calc(90vh - 81.6px);
+    padding-top: 150px;
+    width: 50%;
+  }
+  
+  .text{
+    margin-top: 120px;
+    width: 100%;
+    padding-bottom: 50px;
+    padding-left: 15px;
+  }
+  
+  .text h1{
+    color: #fff;
+    font-size: 3rem;
+    cursor: context-menu;
+  }
+  
+  .text span{
+    display: inline-block;
+  }
+  
+  span:hover{
+    color: #48cfad;
+    transition: all .5s;
+  }
+  
+  span.name{
+    color: #ed5565;
+  }
+  span.m-left{
+    margin-left: -10px;
+  }
+  
+  .text p{
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    font-size: 1rem;
+    padding-top: 10px;
+  }
+  
+  .text a{
+   padding: 12px 25px;
+   background-color: none;
+   border: 3px solid #ed5565;
+   color: #ed5565;
+   font-size: .8rem;
+   letter-spacing: 2px;
+   position: relative;
+   top: 80px;
+   overflow: hidden;
+   transition: .5s;
+   display: inline-block;
+  }
+  
+  .text a:hover{
+    color: #fff;
+  }
+  
+  .text a::before{
+    content: '';
+    background-color: #ed5565;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0%;
+    z-index: -1;
+    transition: .5s;
+  }
+  
+  .text a:hover::before{
+    height: 100%;
+  }
+  
+  .profile-image img{
+    width: 400px;
+    margin-top: 50px;
+  }
+  
+  .card-body{
+      background-color: #252627;
+    
+      border-color: rosybrown;
+  }
+
+ 
+
+  header h1,
+header a,
+.text p,
+.about h1,
+.skills h1,
+.work h1,
+.contact h1 {
+  color: #707070;
+}
+
+.about{
+    height: 50vh;
+    margin-top: 50px;
+  }
+  
+  .about h1,
+  .work h1{
+    font-size: 5rem;
+    z-index: 0;
+    opacity: .1;
+  }
+  
+  .about-me-info{
+    max-width: 900px;
+    background-color: #252627;
+    box-shadow: 0 0 1.2rem rgba(0, 0, 0, .25);
+    padding: 10px;
+    position: relative;
+    top: -10px;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+  
+  .about-me-info p{
+    font-size: 1.3rem;
+    color: #bebebe;
+  }
+  
+  .about-me-info p:nth-child(2)
+  .about-me-info p:last-child{
+    margin-top: 30px;
+  }
+  
+  .about img{
+    width: 100%;
+    position: relative;
+    top: -220px;
+    left: calc(83% - 100px);
+    right: calc(100% - 100px);
+    transform: translateX(calc(-100% + 100px));
+  }
+
+  .skills{
+    height: 150vh;
+  }
+  
+  .skills h1,
+  .contact h1{
+    text-align: right;
+    font-size: 5rem;
+    opacity: .1;
+  }
+  
+  .skills-info{
+    font-size: 1.4rem;
+    color: #bebebe;
+    max-width: 800px;
+    position: relative;
+   text-align: center;
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 100px;
+    
+  }
+  
+  .html{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: content;
+    margin-bottom: 40px;
+    
+  }
+  
+  div[class^='tag-'] {
+    clip-path: polygon(75% 0% 100% 50% 75% 100% 0% 100% 0% 50% 0% 0%);
+    width: 300px;
+    height: 30px;
+    background-color: #707070;
+    margin-right: 30px;
+    font-family: "montserrat";
+  }
+  
+  div[class^='tag-'] p {
+    color:#fff;
+    text-align:left;
+    padding-left:20px;
+    font-size: 1.1rem;
+    padding-top:4px; 
+  }
+  
+  .progressbar{
+    position: relative;
+    width: 1000px;
+    height: 20px;
+    border: 2px solid #48cfad;
+    border-radius: 20px;
+    margin-top: 7px;
+
+    
+  }
+  
+  div[class^='bar-'] {
+    position: absolute;
+    background-color: #48cfad;
+    height: 10px;
+    border-radius: 20px;
+    margin: 2.7px;
+  }
+  
+  
+  .bar-html,
+  .bar-css,
+  .bar-javascript,
+  .bar-react {
+    width: calc(0 - 6px);
+  }
+  
+  /* .work-category button{
+    text-transform: capitalize;
+    border: 3px solid #ed5565;
+    padding: 15px 30px;
+    border-radius: 50px;
+    color: #ed5565;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    background-color: #252627;
+    outline: none;
+    cursor: pointer;
+    margin: 4px;
+  } */
+  
+  
+  
+  div[class^='category-']{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+    grid-gap:20px;
+  }
+  
+
+  .work a {
+    justify-self: center;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .work-category .active{
+    background-color: #ed5565;
+  }
+  
+  button.active{
+    color: #fff;
+  }
+  
+  .work a img{
+    width: 250px;
+    justify-self: center;
+    text-align: center;
+  }
+  
+  div.hideCategory{
+    display: none;
+  }
+  
+  .showCategory{
+    display: block;
+  }
+  
+  .contact{
+    margin-top: 50px;
+  }
+  
+  form input,
+  form textarea{
+    display: block;
+    width: 100%;
+    padding: 20px;
+    background-color: #252627;
+    border: 3px solid #707070;
+    margin: 20px 0;
+    outline: none;
+    font-size: 1.0rem;
+    color: #fff;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+  }
+  
+  form input:last-child{
+    width: 150px;
+    background-color: #ed5565;
+    border: none;
+    cursor: pointer;
+  }
+  
+  footer hr{
+    border: 2px solid #707070;
+    margin-top: 80px;
+    
+  }
+  
+  footer p{
+    text-align: center;
+    color: #707070;
+    font-size: 1.0rem;
+    padding: 30px 0;
+  }
+  
+  
+  .category-designing{
+    padding-top: 50px;
+    padding-bottom: 300px;
+  }
+  
+  .category-animation{
+  padding-top: 50px;
+  padding-bottom: 500px;
+  }
+  
+  
+  .category-project{
+    padding-top: 50px;
+    padding-bottom: 500px;
+  }
+  
+  
+  .btn{
+    position: relative;
+    display: block;
+    color: #707070;
+    font-size: 18px;
+    font-family: "montserrat";
+    text-decoration: none;
+    margin: 0px 0;
+    border: 2px solid #ed5565;
+    padding: 14px 60px;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 1s all ease;
+    
+    
+  }
+  
+  
+  
+  .work-category{
+    padding-top: 70px;
+
+  }
+  
+  .btn::before{
+    background: #ed5565;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    transition: all 0.6s ease;
+  }
+  
+  .btn1::before{
+    width: 1;
+    height: 100%;
+  }
+  
+  .btn1:hover::before{
+    width: 100%;
+  }
+  
+  .btn2::before{
+    width: 100%;
+    height: 0;
+  }
+  
+  .btn2::before{
+    width: 100%;
+    height: 0;
+  }
+  
+  .btn2:hover::before{
+    height: 100%;
+    
+  }
+  
+  .btn3::before{
+    width: 100%;
+    height: 0;
+    transform: translate(-50%,-50%) rotate(45deg);
+  }
+  
+  .btn3:hover::before{
+    height: 300%;
+  }
+  
+  .rotationText{
+    transform: rotate(-40deg);
+    font-size: 1.2rem;
+    color: #ed5565;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    position: relative;
+    top: -60px;
+    bottom: 0;
+    left: 60%;
+    margin-left: -30px;
+ 
+  }
+  
+  .abilities{
+   
+    min-width: 200px;
+    margin-right: auto;
+      margin-left: auto;
+      width: 70%;
+      margin-top: 200px;
+      margin-bottom: 200px;
+  }
+  
+  .no-bullets{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+  }
+  
+  .ability-title{
+    display: inline-block;
+    width: 52%;
+    color: #707070;
+    font-size: 19px;
+    padding: 8px;
+    font-family: "montserrat";
+  }
+  li{
+    text-align: -webkit-match-parent;
+  }
+  
+.fa-star{
+    color: #707070;
+}
+
+  
+  .fa{
+    letter-spacing: 1px;
+    color: #707070;
+  }
+  .checked {
+    color: #22A39F;
+  }
+  
+  
+
+  
+  .FooterFont2{
+    color: #707070;
+    position: relative;
+  }
+    
+
+
+
+
+
+
+</style>
+
+
+
+
+
+<body style="background-color: #252627;">
+    <div class="container" style="margin: 0px 0px;width: 100%;">
+        <nav class="navbar navbar-expand-lg">
+            <div class="lgo">
+                <h1 style="color: #ed5565;">Steve</h1>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span style="background-color: #707070;border: solid #ed5565;" class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#work">Work</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+              </div>
+            </div>
+          </nav>
+    </div>
+    
+    <div class="row">
+        <div class="col-sm-6">
+          <div class="card" style="border-width: 0px;">
+            <div class="card-body">
+                <div class="text">
+                    <h1>
+                      <span>H</span>
+                      <span class="m-left">i</span>  
+                      <span class="m-left">,</span>
+                      <br>
+                      <span>I</span>
+                      <span class="m-left">'</span>  
+                      <span class="m-left">m</span>
+                      <span class="name">S</span>
+                      <span class="m-left name">t</span>  
+                      <span class="m-left name">e</span>
+                      <span class="m-left name">v</span>  
+                      <span class="m-left name">e</span>
+                      <span class="m-left">,</span>
+                      <br>
+                      <span>P</span>
+                      <span class="m-left">r</span>  
+                      <span class="m-left">o</span>
+                      <span class="m-left">g</span>  
+                      <span class="m-left">r</span>
+                      <span class="m-left">a</span>  
+                      <span class="m-left">m</span>
+                      <span class="m-left">m</span>  
+                      <span class="m-left">e</span>
+                      <span class="m-left">r</span>  
+                      <span class="m-left">.</span>
+                    </h1>
+                
+                    <p>Web Designer / App Developer / Pro Editor</p>
+                    <a href="#contact">Contact me</a>
+                  </div>
+                
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-6">
+          <div class="card " style="border-width: 0px;">
+            <div class="card-body" style="padding: 0px;">
+                <div class="profile-image">
+                    <img src="img/myImagePNG.png" style="max-width:100%;height:auto;" alt="">
+                   </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card" style="border-width: 0px;">
+   
+        <div class="card-body">
+            <div class="container about" id="about">
+                <h1 style="width: 100%;">About</h1>
+                <div class="about-me-info">
+                  <h2>Name:</h2>
+                  <p>Steve Chalissery</p>
+                  <br><br>
+                  <h2>Age:</h2>
+                  <p>18 years</p>
+                  <br><br>
+                  <h2>Location:</h2>
+                  <p>Mumbai, Maharashtra, India</p>
+                  <br><br><br><br>
+               <p>I am an allround web developer, programmer and professionel Editor.</p>
+               <p>I have good Knowledge of front-end techniques.I love spending time on designing websites and fixing little details.Also like working in a team,you'll learn faster and much more.As the saying goes:'two heads are better than one'.</p>
+                </div>
+                <img src="img/dotted-shape.png" alt="">
+              </div>
+        </div>
+      </div>
+
+<div style="position: relative;top: 700px;">
+    <div class="card" style="border: none;">
+        <div class="card-body">
+         <div class="container skills" id="skills">
+            <h1>Skills</h1>
+            <p class="skills-info">
+              This are some of my Skills and Abilities
+            </p>
+            <div class="html">
+              <div class="tag-html"> <!--i need to change all this.....-->
+                <p>Web Development</p>
+              </div>
+              <div class="progressbar">
+                <div class="bar-html"></div>
+              </div>
+            </div>
+          
+            <div class="html">
+              <div class="tag-css">
+                <p>App Development</p>
+              </div>
+              <div class="progressbar">
+                <div class="bar-css"></div>
+              </div>
+            </div>
+          
+            <div class="html">
+              <div class="tag-javascript">
+                <p>Database Management</p>
+              </div>
+              <div class="progressbar">
+                <div class="bar-javascript"></div>
+              </div>
+            </div>
+          
+            <div class="html">
+              <div class="tag-react">
+                <p>Editing</p>
+              </div>
+              <div class="progressbar">
+                <div class="bar-react"></div>
+              </div>
+            </div>
+         </div>
+
+
+
+        </div>
+      </div>
+</div>
+    
+
+
+
+
+
+<div class="card" style="border: none;position: relative;top: 130px;">
+  
+    <div class="card-body">
+        <div class="abilities">
+            <h3 style="font-size: 33px; font-weight: 300;
+            color: #22A39F; font-family: 'Open Sans', sans-serif !important;
+              margin-bottom: 20px;margin-top: 20px;line-height: 1.1;">Abilities</h3>
+            <div class="row">
+              <div class="col-md-6">
+                <ul class="no-bullets">
+                <li>
+                  <span class="ability-title">HTML(5)</span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </li>
+            
+                <li>
+                  <span class="ability-title">CSS</span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </li>
+            
+                <li>
+                  <span class="ability-title">Bootstrap framework</span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                </li>
+            
+                <li>
+                  <span class="ability-title">MySQL</span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </li>
+            
+                <li>
+                  <span class="ability-title">PHP</span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </li>
+            
+                <li>
+                  <span class="ability-title">jQuery</span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                </li>
+            
+                <li>
+                  <span class="ability-title">java</span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star "></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </li>
+            
+            
+              </ul>
+            </div>
+            
+            <div class="col-md-6">
+            <ul class="no-bullets">
+              <li>
+                <span class="ability-title">javascript</span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </li>
+              
+              <li>
+                <span class="ability-title">C</span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+              </li>
+            
+              <li>
+                <span class="ability-title">C++</span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+              </li>
+            
+              <li>
+                <span class="ability-title">Python</span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+              </li>
+            
+              <li>
+                <span class="ability-title">Kotlin</span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </li>
+            
+              <li>
+                <span class="ability-title">AngularjS</span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star "></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </li>
+            
+              <li>
+                <span class="ability-title">Object Orientated programming </span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+              </li>
+             </ul>
+            </div>
+            
+              
+            <hr>
+            <h3 style="font-size: 33px; font-weight: 300;
+            color: #22A39F; font-family: 'Open Sans', sans-serif !important;
+              margin-bottom: 20px;margin-top: 20px;line-height: 1.1;">Languages</h3>
+            <div class="row">
+              <div class="col-md-6">
+               <ul class="no-bullets">
+                <li>
+                  <span class="ability-title">English <br> (Daily use) </span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </li>
+                <li>
+                  <span class="ability-title">Hindi </span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </li>
+               </ul>
+              </div>
+              <div class="col-md-6">
+                <ul class="no-bullets">
+                  <li>
+                    <span class="ability-title">Malayalam <br> (Mother tongue) </span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                  </li>
+                  <li>
+                    <span class="ability-title">German <br> (Survivable) </span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                  </li>
+                </ul>
+               </div>
+            
+            <hr>
+            
+            <h3 style="font-size: 33px; font-weight: 300;
+            color: #22A39F; font-family: 'Open Sans', sans-serif !important;
+              margin-bottom: 20px;margin-top: 20px;line-height: 1.1;">Tools</h3>
+            <div class="row">
+              <div class="col-md-6">
+                <ul class="no-bullets">
+                  <li>
+                    <span class="ability-title">MS Office </span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                  </li>
+                  <li>
+                    <span class="ability-title">  Windows <br> (10+ years)</span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                  </li>
+                  <li>
+                    <span class="ability-title"> Mac(3 years) </span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                  </li>
+                  <li>
+                    <span class="ability-title">Notepad++ <br> (2 years) </span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                  </li>
+                  <li>
+                    <span class="ability-title">Adobe Photoshop <br> (1 year)</span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                  </li>
+                  <li>
+                    <span class="ability-title">Adobe Premiere <br> (1 year) </span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                  </li>
+                  <li>
+                    <span class="ability-title">Adobe After Effects <br> (1 year)</span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star "></span>
+                    <span class="fa fa-star "></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                  </li>
+                </ul>
+              </div>
+            
+              <div class="col-md-6">
+                <ul class="no-bullets">
+                  <li>
+                    <span class="ability-title">Internet Explorer <br> (8 years) </span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                  </li>
+                  <li>
+                    <span class="ability-title">Visual Studio Code <br> (2 years) </span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                  </li>
+                  <li>
+                    <span class="ability-title">Xcodes <br> (2 years) </span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                  </li>
+                  <li>
+                    <span class="ability-title">XAMP(1 year) </span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                  </li>
+                  <li>
+                    <span class="ability-title">Final cut Pro <br> (1 year)</span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                  </li>
+                  <li>
+                    <span class="ability-title">IntelliJ(1 year) </span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                  </li>
+                  <li>
+                    <span class="ability-title">Code Blocks <br> (3 years)</span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            </div>
+          </div>
+          
+          
+
+    </div>
+  </div>
+
+
+
+
+  <div class="card" style="border: none;">
+
+    <div class="card-body" style="padding: 0px;">
+        <div class="container work" id="work">
+            <h1>work</h1>
+            <div class="work-category">
+              <div class="">
+                <a href="#anything" class="  nav-link js-scroll-trigger btn btn1">Web Designs </a>
+                </div>
+              <div class="">
+              <a href="#webAnimation" class="  nav-link js-scroll-trigger btn btn1">Apps </a>
+              </div>
+          
+          
+              <div class="">
+                <a href="#reactProjects" class="  nav-link js-scroll-trigger btn btn1">Edits </a>
+                </div>
+              
+            </div>
+            <div class="category-designing showCategory" id="anything">
+              <a href=""><img src="img/coming soon.jfif" alt=""></a>
+              <a href=""><img src="img/coming soon.jfif" alt=""></a>
+              <a href=""><img src="img/coming soon.jfif" alt=""></a>
+              <a href=""><img src="img/coming soon.jfif" alt=""></a>
+              <a href=""><img src="img/coming soon.jfif" alt=""></a>
+              <h2 class="rotationText">Web Designs</h2>
+            </div>
+          
+            <div class="category-animation showCategory" id="webAnimation">
+              <a href=""><img src="img/coming soon.jfif" alt=""></a>
+              <a href=""><img src="img/coming soon.jfif" alt=""></a>
+              <a href=""><img src="img/coming soon.jfif" alt=""></a>
+              <h2 class="rotationText">Apps</h2>
+            </div>
+          
+            <div class="category-project showCategory" id="reactProjects">
+              <a href=""><img src="img/coming soon.jfif" alt=""></a>
+              <a href=""><img src="img/coming soon.jfif" alt=""></a>
+              <a href=""><img src="img/coming soon.jfif" alt=""></a>
+              <a href=""><img src="img/coming soon.jfif" alt=""></a>
+              <h2 class="rotationText">Edits</h2>
+          
+            </div>
+          </div>
+          
+          <div class="container contact" id="contact">
+            <h1>Contact</h1>
+            <form action="MAILTO:steve.chalissery@gmail.com" method="post" enctype="text/plain">
+              <input type="text" name="name" placeholder="Full Name" required>
+              <input type="email" placeholder="Email" required>
+             
+              <textarea name="message" placeholder="Message" id="" cols="30" rows="10" required></textarea>
+              <input type="Reset" value="Reset">
+              <input type="submit">
+              
+            </form>
+          </div>
+          
+          <footer>
+            <hr style="width: 100%;">
+          
+            <div style="text-align: center;">
+              <a href="https://www.facebook.com/" class="FooterFont2"><i style="font-size: 40px;" class="fab fa-facebook-square"></i></a>
+              <a href="https://www.instagram.com/" class="FooterFont2"><i style="font-size: 40px;" class="fab fa-instagram"></i></a>
+              <a href="https://twitter.com/" class="FooterFont2"><i style="font-size: 40px;" class="fab fa-twitter"></i></a>
+              <a href="https://www.youtube.com/" class="FooterFont2"><i style="font-size: 40px;" class="fab fa-youtube"></i></a>
+              <a href="https://www.snapchat.com/" class="FooterFont2"><i style="font-size: 40px;" class="fab fa-snapchat-ghost"></i></a>
+              <a href="https://discord.com/" class="FooterFont2"><i style="font-size: 40px;" class="fab fa-discord"></i></a>
+            
+            </div>
+           
+          
+            <p>2020 Copyright. All Rights Reserved.</p>
+          </footer>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="js/ScrollMagic.min.js"></script>
+<script src="js/animation.gsap.min.js"></script>
+<script src="js/TimelineLite.min.js"></script>
+<script src="js/TweenMax.min.js"></script>
+<script src="js/CSSPlugin.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
